@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
@@ -38,6 +39,35 @@ export function Welcome() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
+                  to="/snake"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300"
+                  >
+                    <path
+                      d="M15 5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5Z"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 9v2a2 2 0 0 0 2 2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2Z"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  Play Snake
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
